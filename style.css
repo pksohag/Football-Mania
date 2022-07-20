@@ -15,6 +15,7 @@ body {
     border-radius: 30px;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 .header-banner-content {
@@ -47,4 +48,75 @@ body {
 
 .fa-angle-right {
     padding: 10px;
+}
+
+/* Blogs are here  */
+.blog-container {
+    display: grid;
+    grid-template-columns: 312px 1fr;
+    column-gap: 24px;
+}
+
+.navigation {
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+}
+
+.navigation a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.blog-information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.blogs {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-description {
+    padding: 20px;
+}
+
+.time-comments {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.time-comments p {
+    padding-right: 30px;
+}
+
+.fa-clock,
+.fa-comment-dots {
+    padding-right: 10px;
+}
+
+/* Footer here */
+footer {
+    background-color: #161616;
+    text-align: center;
+
+}
+
+.footer nav {
+    text-decoration: none;
+    color: white;
 }
