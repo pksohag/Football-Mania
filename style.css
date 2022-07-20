@@ -1,1 +1,50 @@
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Common CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 140px;
+}
+
+/* Heder banner section  */
+.header-banner-container {
+    width: 1321px;
+    height: 646px;
+    background: #161616;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-banner-content {
+    width: 531px;
+    height: 424px;
+    color: white;
+}
+
+.header-banner-content h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+
+}
+
+.header-banner-image img {
+    width: 581px;
+    height: 613px;
+    margin-top: 33px;
+}
+
+.header-banner-content button {
+    width: 187px;
+    height: 56px;
+    background: #DD0000;
+    border-radius: 5px;
+    color: white;
+    margin-top: 30px;
+}
+
+.fa-angle-right {
+    padding: 10px;
+}
