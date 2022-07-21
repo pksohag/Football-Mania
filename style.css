@@ -67,6 +67,7 @@ body {
     padding: 10px;
 }
 
+
 /* Blogs are here  
 ------------------------------------------ */
 .blog-container {
@@ -150,6 +151,7 @@ footer {
     text-align: center;
     color: white;
     width: 100%;
+    margin-top: 80px;
 }
 
 footer h2 {
@@ -195,7 +197,40 @@ footer nav a {
     text-align: center;
 }
 
-/* Responsive for Mobile  */
+.view-all {
+    background-color: #DD0000;
+    color: white;
+    font-size: 20px;
+    font-weight: 700px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    left: 45%;
+    visibility: hidden;
+
+}
+
+/* -----------------Animation in button icon------------------------- */
+@keyframes sliding {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(-1);
+    }
+
+
+}
+
+.fa-angle-right {
+    animation-play-state: running;
+    animation: sliding 2s ease 1s infinite alternate;
+}
+
+/* ---------------Responsive for Mobile------------  */
 @media only screen and (max-width:576px) {
 
     .header-banner-container {
@@ -241,14 +276,14 @@ footer nav a {
         border: 1px solid lightgrey;
     }
 
-    nav a {
+    nav a,
+    .upcomming-matches-container {
         display: grid;
         grid-template-columns: 1fr;
     }
-
 }
 
-/* Responsive for tablet */
+/* --------------Responsive for tablet-------------- */
 @media only screen and (min-width:577px) and (max-width:992px) {
     .header-banner-content h1 {
         font-weight: 700;
@@ -294,11 +329,15 @@ footer nav a {
         margin: 10px;
     }
 
-    .blog-information {
+    .blog-information,
+    .upcomming-matches-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
         column-gap: 24px;
         row-gap: 24px;
+    }
+
+    .view-all {
+        visibility: visible;
     }
 }
